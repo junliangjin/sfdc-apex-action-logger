@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: package-lock.json
+  checksum: 466755cd88a99acbcc047ab7c21731461f0092f52d58bc08fd41c8e1f858690f
+- filename: src/apexAction.js
+  checksum: 4e0fc76a2d27b8375ce59f17ad6448175a553c69c0571e120f0e6eb709ca9edf
+version: "1.0"
