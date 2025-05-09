@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex action</title>
+    <style>
+        body {
+            width: 1000px;
+            min-height: 400px;
+            font-family: Arial, sans-serif;
+            margin: 15px;
+        }
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #apex-action-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .main {
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="text" id="filter-input" placeholder="Please enter apex class name or method name"/>
+        <button id="clear-button">Clear cache</button>
+    </header>
+    <article class="main">
+        <section>
+            <table id="apex-action-table">
+                <thead>
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Method Name</th>
+                        <th>Request Params</th>
+                        <th>Response Status</th>
+                        <th>Response</th>
+                    </tr>
+                </thead>
+                <tbody id="apex-action-body">
+                    <!-- Apex action rows will be populated here -->
+                </tbody>
+        
+            </table>
+        </section>
+        <section>
+            <pre id="response-json-viewer"></pre>
+        </section>
+    </article>
+
+    
+    <script type="module" src="src/apexAction.js"></script>
+</body>
+</html>

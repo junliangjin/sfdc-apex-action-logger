@@ -1,0 +1,1 @@
+chrome.devtools.panels.create('Apex Action', 'noIcon.icon', 'apexAction.html')
